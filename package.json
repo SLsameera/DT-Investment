@@ -1,0 +1,55 @@
+{
+  "name": "td-investment-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TD Investment System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test-server": "node test-server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+  "gen:openapi": "node scripts/generateOpenApiJson.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": ["finance", "investment", "microfinance", "api"],
+  "author": "TD Investment Team",
+  "license": "PRIVATE",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "joi": "^17.11.0",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1",
+    "moment": "^2.29.4",
+    "winston": "^3.11.0",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.6",
+    "nodemailer": "^6.9.7",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+      "swagger-ui-express": "^4.6.3",
+      "yamljs": "^0.3.0",
+      "js-yaml": "^4.1.0",
+    "eslint": "^8.47.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
